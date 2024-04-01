@@ -47,6 +47,7 @@ class LiqpayView @JvmOverloads constructor(
         settings.loadsImagesAutomatically = true
         settings.builtInZoomControls = false
         settings.setSupportMultipleWindows(true)
+        isFocusableInTouchMode = true
         webViewClient = object : WebViewClient() {
 
             override fun shouldOverrideUrlLoading(
